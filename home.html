@@ -1,0 +1,387 @@
+<html>
+  <head>
+      <meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Beautiful Bootstrap Navbar with Menu Icons</title> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style> 
+*{ 
+margin:0.5px;
+padding:0.5px; 
+box-sizing: border-box; 
+outline: none; 
+} 
+.navbar { 
+        color: #fff; 
+        background: #926dde !important; 
+        padding: 5px 16px; 
+        border-radius: 0; 
+        border: none; 
+        box-shadow: 0 0 4px rgba(0,0,0,.1); 
+} 
+.navbar img { 
+        border-radius: 50%; 
+        width: 36px; 
+        height: 36px; 
+        margin-right: 10px; 
+} 
+.navbar .navbar-brand { 
+        color: #efe5ff; 
+        padding-left: 0; 
+        padding-right: 50px; 
+        font-size: 24px;                
+} 
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus { 
+        color: #fff; 
+} 
+.navbar .navbar-brand i { 
+        font-size: 25px; 
+        margin-right: 5px; 
+} 
+.search-box { 
+        position: relative; 
+}        
+.search-box input { 
+        padding-right: 35px; 
+        min-height: 38px; 
+        border:none; 
+        background: #faf7fd; 
+        border-radius: 3px !important; 
+} 
+.search-box input:focus {                
+        background: #fff; 
+        box-shadow: none; 
+} 
+.search-box .input-group-addon { 
+        min-width: 35px; 
+        border: none; 
+        background: transparent; 
+        position: absolute; 
+        right: 0; 
+        z-index: 9; 
+        padding: 10px 7px; 
+        height: 100%; 
+} 
+.search-box i { 
+        color: #a0a5b1; 
+        font-size: 19px; 
+} 
+.navbar .nav-item i { 
+        font-size: 18px; 
+} 
+.navbar .nav-item span { 
+        position: relative; 
+        top: 3px; 
+} 
+.navbar .navbar-nav > a { 
+        color: #efe5ff; 
+        padding: 8px 15px; 
+        font-size: 14px;                
+} 
+.navbar .navbar-nav > a:hover, .navbar .navbar-nav > a:focus { 
+        color: #fff; 
+        text-shadow: 0 0 4px rgba(255,255,255,0.3); 
+} 
+.navbar .navbar-nav > a > i { 
+        display: block; 
+        text-align: center; 
+} 
+
+.navbar .nav-item.open > a, .navbar .nav-item.open > a:hover, .navbar .nav-item.open > a:focus { 
+        color: #fff; 
+        background: none !important; 
+
+} 
+
+.navbar .navbar-nav .active a, .navbar .navbar-nav .active a:hover, .navbar .navbar-nav .active a:focus { 
+        color: #fff; 
+        text-shadow: 0 0 4px rgba(255,255,255,0.2); 
+        background: transparent !important; 
+} 
+.navbar .navbar-nav .user-action { 
+        padding: 9px 15px; 
+        font-size: 15px; 
+} 
+.navbar .navbar-toggle { 
+        border-color: #fff; 
+} 
+.navbar .navbar-toggle .icon-bar { 
+        background: #fff; 
+
+} 
+.navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover { 
+        background: transparent; 
+} 
+.navbar .navbar-nav .open .dropdown-menu { 
+        background: #faf7fd; 
+        border-radius: 1px; 
+        border-color: #faf7fd; 
+        box-shadow: 0 2px 8px rgba(0,0,0,.05); 
+} 
+.navbar .divider { 
+        background-color: #e9ecef !important; 
+} 
+@media (min-width: 1200px){ 
+        .form-inline .input-group { 
+                width: 350px; 
+                margin-left: 30px; 
+        } 
+} 
+@media (max-width: 1199px){ 
+        .navbar .navbar-nav > a > i { 
+                display: inline-block;                        
+                text-align: left; 
+                min-width: 30px; 
+                position: relative; 
+                top: 4px; 
+        } 
+        .navbar .navbar-collapse { 
+                border: none; 
+                box-shadow: none; 
+                padding: 0; 
+        } 
+        .navbar .navbar-form { 
+                border: none;                        
+                display: block; 
+                margin: 10px 0; 
+                padding: 0; 
+        } 
+        .navbar .navbar-nav { 
+                margin: 8px 0; 
+        } 
+        .navbar .navbar-toggle { 
+                margin-right: 0; 
+        } 
+        .input-group { 
+                width: 100%; 
+        } 
+} 
+body{
+  font-size:23px;
+}
+h1{
+  font-size:30px;
+}
+h3{
+  font-size:23px;
+}
+div h1{
+  font-size:30px;
+}
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark"> 
+        <a href="#" class="navbar-brand"><i class="fa fa-sun-o"></i>Surya<b>Technologies</b></a>                  
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"> 
+                <span class="navbar-toggler-icon"></span> 
+        </button> 
+     
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">                
+                <form class="navbar-form form-inline"> 
+                        <div class="input-group search-box">                                                                
+<input type="text" id="search" class="form-control" placeholder="Search here..."> 
+                                <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span> 
+                        </div> 
+                </form> 
+                <div class="navbar-nav ml-auto"> 
+                        <a href="home.html" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a> 
+                        <a href="basic.html" class="nav-item nav-link"><i class="fa fa-users"></i><span>About us</span></a> 
+                        <a href="course.html" class="nav-item nav-link"><i class="fa fa-gears"></i><span>Training</span></a> 
+                        <a href="course1.html" class="nav-item nav-link"><i class="fa 
+fa-graduation-cap"></i><span>Courses</span></a> 
+                        <a href="reg.html" class="nav-item nav-link"><i class="fa fa-briefcase"></i><span>Careers</span></a> 
+                        <a href="contact.html" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Contact</span></a>                
+                              
+                </div> 
+ </div>
+</nav> 
+
+    
+
+    
+    <div  style="background-color:#c5c5c5"  > 
+
+  <br>
+   
+<h1 >Home</h1> 
+
+<br> 
+
+
+</div>
+    <br> 
+<br> 
+<br>
+    
+    <h3>Our Vision</h3><p> 
+Endeavor to be the number one Training provider locally and globally offering the most comprehensive and market-relevant programs to students helping them boost up their career Growth. Set benchmarks for high quality and affordable training programs for all latest and future-ready technologies. 
+
+</p><br> 
+<h3>Our Mission</h3><p> 
+To provide best quality training to each individual to meeting their specific requirements. 
+To empower Students with future ready technologies for a better and fulfilling career in IT industry. 
+Creating an innovative learning environment for our students and trainer. 
+
+</p> 
+<h1>Start Investing in You</h1> 
+<p> 
+Our courses catalogue enable individuals and teams to perform better in every technical aspect.</p> 
+<br> 
+<br> 
+<br> 
+<center> 
+<i class="fa 
+fa-graduation-cap" style="color:#926dde;font-size:64px"> 
+</i> 
+
+<h3> 
+Learn from experts</h3><p> 
+Our real-time professionals help you to learn any new technology in an ease manner.</p > 
+<br> 
+<br> 
+<i class="fa fa-clock-o"style="color:#926dde;font-size:64px"></i> 
+<h3> 
+Flexible Timings</h3> 
+<p> 
+Learn anytime from anywhere. Utilize your free time to learn new technology with our experts.</p> 
+<br> 
+<br> 
+
+<h3> 
+<i class="fa fa-users"style="color:#926dde;font-size:64px"></i> 
+<h3>150K+ students</h3><p> 
+95% positive feedback. Have a look of our participant’s video reviews and it says all.</p> 
+<br> 
+<br> 
+
+<i class="fa fa-code-fork"style="color:#926dde;font-size:64px"></i> 
+<h3> 
+
+Best Courses</h3><p> 
+No matter what your current issue is, we have a team ready to help immediately.</p> 
+<br> 
+<br> 
+
+<i class="fa fa-map-marker"style="color:#926dde;font-size:64px"></i> 
+<h3> 
+
+Where we are</h3><p> 
+No matter what your current issue is, we have a team ready to help immediately.</p> 
+<br> 
+<br> 
+
+<i class="fa fa-universal-access"style="color:#926dde;font-size:64px"></i> 
+<h3> 
+Fast Support</h3><p> 
+No matter what your current issue is, we have a team ready to help immediately.</p><br> 
+<br> 
+
+</center> 
+<div style="background-color:black;color:#c5c5c5" >
+<h3> 
+Quick Links</h3> 
+<h3>About Us</h3> 
+<h3> 
+Why Us</h3> 
+<h3>Returns and Reschedules</h3> 
+<h3> 
+Get In Touch</h3> 
+<h3> 
+STUDENTS ZONE</h3> 
+<h3> 
+OurQuick Links</h3> 
+<h3> 
+About Us</h3> 
+<h3> 
+Why Us</h3> 
+<h3> 
+Returns and Reschedules</h3> 
+<h3> 
+Get In Touch</h3> 
+<h3> 
+STUDENTS ZONE</h3> 
+<h3> 
+Our Courses</h3> 
+<h3> 
+Course Schedules</h3> 
+<h3> 
+Register For a Course</h3> 
+<h3> 
+Our Clients</h3> 
+<h3> 
+Feedback</h3> 
+<h3> 
+Interview Questions</h3> 
+<h3> 
+YouTube Videos</h3> 
+<h3> 
+Trending Courses</h3> 
+<h3> 
+Python Training</h3> 
+<h3> 
+DevOps Training</h3> 
+<h3> 
+Data Science Training</h3> 
+<h3> 
+Digital Marketing Training</h3> 
+<h3> 
+Amazon AWS Training</h3> 
+<h3> 
+PAYMENT PARTNERS</h3> 
+<center><i class="fa fa-cc-paypal"style="color:blue;font-size:64px"></i> 
+</center>
+<br> 
+<br> 
+<br> 
+<h3> 
+WORK WITH US</h3> 
+
+<h3> 
+Careers</h3> 
+
+<h3> 
+Sign up as a Instructor</h3> 
+
+<h3> 
+Hire From us</h3> 
+
+<h3> 
+Inquire for Franchise</h3> 
+
+<h3> 
+Partner with Us</h3> 
+
+<h3> 
+MEETING PARTNERS 
+
+</h3> 
+</center> 
+<center><i class="fa fa-video-camera" style="color:green;font-size:64px"> 
+</i><h3>Google Meet</h3> 
+<br> 
+<i class="fa fa-video-camera" style="color:blue;font-size:64px"></i><h3>Zoom</h3> 
+</center> 
+<center> 
+<h4> 
+© Copyright – 2020 | Surya Technologies | All Rights Reserved</h4> 
+
+<h4> 
+
+Sitemap | Returns and Reschedules | Terms of Use | Privacy & Disclaimer 
+</h4> 
+<h4>follow us</h4> 
+</center> 
+</div> 
+  </body>  
+</html>
